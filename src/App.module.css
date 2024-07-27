@@ -1,0 +1,78 @@
+/* src/App.module.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically within its parent */
+  align-items: center;     /* Center horizontally within its parent */
+  min-height: calc(100vh - 40px); /* Full viewport height minus top and bottom gaps */
+  padding: 20px;
+  background-color: #1e1e1e; /* Darker background color */
+  color: #e0e0e0; /* Light text color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 40px auto; /* Add space above and below the container */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #f5f5f5; /* Slightly lighter text color for headings */
+  font-family: 'Arial', sans-serif;
+}
+
+.inputSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333; /* Dark border color */
+  border-radius: 4px;
+  width: 70%;
+  margin-right: 10px;
+  background-color: #2c2c2c; /* Dark input background */
+  color: #e0e0e0; /* Light text color */
+}
+
+.addButton {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #6200ea; /* Vibrant button color */
+  color: #e0e0e0; /* Light text color */
+  transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #3700b3; /* Darker button color on hover */
+}
+
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterButtons button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #6200ea; /* Vibrant filter button color */
+  color: #e0e0e0; /* Light text color */
+  transition: background-color 0.3s ease;
+}
+
+.filterButtons button.active {
+  background-color: #3700b3; /* Darker color for active filter button */
+}
+
+.filterButtons button:hover {
+  background-color: #3700b3; /* Darker color on hover */
+}
